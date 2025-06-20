@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore;
 public class UsersController(DataContext context) : BaseApiController
 {
 
-
+    [AllowAnonymous]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
     {
