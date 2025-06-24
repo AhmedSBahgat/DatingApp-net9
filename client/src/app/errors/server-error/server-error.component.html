@@ -1,0 +1,13 @@
+<h4>Internal Server Error</h4>
+@if (error) {
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+<p class="font-weight-bold">Note: If you are seeing this error then angular is not to blame!</p>
+<p>What to do next?</p>
+<ol>
+    <li>Open chrome dev tools and check tha failing network requist in the network tab</li>
+</ol>
+<p class="font-weight-bold">thsi is server side problem</p>
+<code class="mt-5" style="background-color: whitesmoke;">
+    {{error.details}}
+</code>
+}
