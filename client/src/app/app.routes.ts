@@ -16,8 +16,8 @@ export const routes: Routes = [
         runGuardsAndResolvers: 'always',
         canActivate: [authGuard], // Add your auth guard here if needed
         children: [
-            { path: 'members', component: MemberListComponent}, // Add your auth guard here if needed
-            { path: 'members/:id', component: MemberDetailComponent },
+            { path: 'members', component: MemberListComponent }, // Add your auth guard here if needed
+            { path: 'members/:username', component: MemberDetailComponent },
             { path: 'lists', component: ListsComponent },
             { path: 'messages', component: MessagesComponent },
 
